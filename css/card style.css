@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+.container .card
+{
+  padding-top: 20px;
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover
+{
+    height: 450px;
+}
+.container .card .imgContainer
+{
+    position: relative;
+    width:250px;
+    height:250px;
+    top:-50px;
+    left:10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.container .card .imgContainer img
+{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.container .card .content
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color:#111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+@media (max-width: 330px){
+    .container .card .imgContainer{
+        left: -2px;
+    }
+}
+  /* nav bar droop down css */
+  .dropbtn {
+    background-color: #FFFFFF;
+    color: #717275;
+
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #FF4400;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #FF4400;
+}
+/* nav bar droop down css */
+
+/* card strat */
+.text-center,
+h3 {
+  text-align: center;
+  color: rgba(161, 84, 8, 0.472);
+  /* padding-top: 10px; */
+  font: 15px Arial, sans-serif;
+}
+
+.card {
+  transition: transform 0.4s;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+position: relative;
+
+
+}
+
+.card:hover {
+  transform: scale(1.05);
+
+}
+
+.card-text- {
+  text-align: center;
+
+  font-weight: bold;
+}
+
+
+.card-body{
+  text-align: center;
+  color: #2d1f30;
+  background-color: #FF4400;
+  font-weight: bold;
+  
+}
+.card-body:hover{
+    color: #33363893;
+    background-color: #b24a35;
+  }
+.card-img{
+  border-radius: 15px;
+
+}
+.row{
+padding-top: 100px;
+--bs-gutter-x: 1.5rem;
+--bs-gutter-y: 0;
+display: flex;
+flex-wrap: wrap;
+margin-top: calc(var(--bs-gutter-y)* -1);
+margin-right: calc(var(--bs-gutter-x) / -2);
+margin-left: calc(var(--bs-gutter-x) / -2);
+}
+/* .btn {
+
+} */
+.btn:hover{
+ color: #FF4400;
+background-color:#b24a35;
+}
+/* card strat */
+</style>
+</style>
+<!-- /* droop down style */ -->
